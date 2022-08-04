@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TIC TAC TOE</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <!-- inputs -->
+        <div class="container">
+            <span style="color: white">cpu mode</span
+            ><input type="checkbox" name="cpu mode" id="cpuMode" />
+            <!-- functionalities -->
+            <div class="functionality">
+                <span>
+                    <span
+                        style="
+                            font-size: 1.3rem;
+                            font-weight: 700;
+                            color: green;
+                        "
+                        >X</span
+                    >
+                    <span
+                        style="
+                            font-size: 1.3rem;
+                            font-weight: 700;
+                            color: yellow;
+                        "
+                        >O</span
+                    >
+                </span>
+                <span class="turn"> <b class="turns"> X </b> turn</span>
+                <button id="restart">RE</button>
+            </div>
+            <!-- first row -->
+            <div>
+                <input type="text" class="inputs" id="input1" />
+                <input type="text" class="inputs" id="input2" />
+                <input type="text" class="inputs" id="input3" />
+            </div>
+            <div>
+                <input type="text" class="inputs" id="input4" />
+                <input type="text" class="inputs" id="input5" />
+                <input type="text" class="inputs" id="input6" />
+            </div>
+            <div>
+                <input type="text" class="inputs" id="input7" />
+                <input type="text" class="inputs" id="input8" />
+                <input type="text" class="inputs" id="input9" />
+            </div>
+            <button class="checker">checker</button>
+            <p>
+                PLAYER <b class="turns" id="turns"> _ </b>
+                <span id="wins">WINS!</span>
+            </p>
+        </div>
+        <button class="stop" style="visibility: hidden;">stoppp</button>
+    </body>
+</html>
